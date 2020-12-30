@@ -1,0 +1,68 @@
+@import '../../../assets/styles/variables.scss';
+/* Navigation Bar Styling*/
+#id_nav_main {
+  // height: 150px;
+  .btn-get-started {
+    color: $color-white;
+    border: none;
+    background: transparent linear-gradient(90deg, #9f62c9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+  }
+  .collapse {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .navbar-collapse {
+      width: auto;
+      border-top: 0;
+      box-shadow: none;
+    }
+    .navbar-collapse.collapse {
+      display: block !important;
+      height: auto !important;
+      padding-bottom: 0;
+      overflow: visible !important;
+    }
+    .navbar-collapse.in {
+      overflow-y: visible;
+    }
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #ddd;
+  }
+  .sr-only {
+    clip: rect(0, 0, 0, 0);
+  }
+  .navbar-toggle {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .navbar-toggle:focus {
+    outline: 0;
+  }
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+  @media (min-width: 768px) {
+    .navbar-toggle {
+      display: none;
+    }
+  }
+}

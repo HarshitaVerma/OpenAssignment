@@ -1,0 +1,34 @@
+@import '../../../assets/styles/variables.scss';
+
+/* Bottom Image Styling*/
+.bg-bottom-img-container {
+  background-image: url(../../../assets/sol_wave_bg.svg);
+  background-repeat: no-repeat;
+}
+
+#id_bottom_main {
+  font-size: $font-small;
+  label {
+    color: $color-grey-font;
+  }
+  .btn {
+    width: 198px;
+    background-color: #f5f7ff;
+  }
+  mat-card {
+    width: 391px;
+    height: 253px;
+    padding: 20px;
+    background: $color-white-dull;
+    box-shadow: 0px 0px 30px #2321321f;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+  }
+  .purple-card {
+    background: #c4a5da;
+    color: white;
+    label {
+      color: $color-white-dull;
+    }
+  }
+}
